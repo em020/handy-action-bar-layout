@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HandyActionBarLayout">
+
+        <!--default style attr-->
+        <attr name="handyActionBarStyle" format="reference"/>
+        <attr name="abc" format="dimension"/>
+        <attr name="android:minHeight"/>
+    </declare-styleable>
+</resources>
