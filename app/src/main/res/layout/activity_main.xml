@@ -12,14 +12,81 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>-->
+        android:maxLines="1"
+        android:ellipsize="end"/>-->
 
     <yimin.sun.handyactionbar.HandyActionBarLayout
+        android:id="@+id/handyactionbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="reset-L"
+                android:onClick="resetL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="reset-M"
+                android:onClick="resetM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="reset-R2"
+                android:onClick="resetR2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text="reset-R1"
+                android:onClick="resetR1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:onClick="resetTopMargin"
+                android:text="reset-top-margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--<Button-->
+        <!--style="@style/Widget.AppCompat.Button"-->
+        <!--android:onClick="onClickButton"-->
+        <!--android:text="trick"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <Button
+        style="@style/Widget.AppCompat.Button"
+        android:onClick="onClickButtonTrick2"
+        android:text="trick2"
+        android:layout_margin="8dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button"
+        android:onClick="onClickButtonTrick3"
+        android:text="trick3"
+        android:layout_margin="8dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
 
 
 

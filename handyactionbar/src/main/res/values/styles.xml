@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="actionBarStyle">
-        <item name="android:background">#ce7303</item>
-        <item name="android:minHeight">40dp</item>
+    <style name="HandyActionBarDefaultStyle">
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="background">@android:color/transparent</item>
+        <item name="backDrawable">@drawable/ic_arrow_back_black_24dp</item>
+        <item name="moreDrawable">@drawable/ic_more_horiz_black_24dp</item>
+        <item name="middlePartHorizontalBounds">LtoL</item>
+        <item name="middlePartElementGravity">center_vertical|left</item>
+        <item name="middlePartTextAppearance">@style/HandyActionBarDefaultMiddlePartTextAppearance</item>
+        <item name="sidePartTextAppearance">@style/HandyActionBarDefaultSidePartTextAppearance</item>
+    </style>
+
+    <style name="HandyActionBarDefaultMiddlePartTextAppearance">
+        <item name="android:textColor">#300000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HandyActionBarDefaultSidePartTextAppearance">
+        <item name="android:textColor">#300000</item>
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>
