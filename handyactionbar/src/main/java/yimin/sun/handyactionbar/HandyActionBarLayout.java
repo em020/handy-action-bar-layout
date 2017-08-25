@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.v4.view.OnApplyWindowInsetsListener;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.view.WindowInsetsCompat;
 import android.support.v4.widget.TextViewCompat;
@@ -59,10 +58,10 @@ public class HandyActionBarLayout extends RelativeLayout {
     private MenuBuilder r1Menu;
     private Map<String, Runnable> r1MenuCallbackMap;
 
-    // ##fields to add:
+    // TODO ##fields to add:
 
 
-    // ##methods to add:
+    // TODO ##methods to add:
 
     // setXWithCustomView(pos, layout, listener) // 要忽略custom view的match_parent dimen (height is fine, width of match_parent must be ignored)
 
@@ -71,6 +70,9 @@ public class HandyActionBarLayout extends RelativeLayout {
     // addToR1WithImagedText(drawable, text, listener)
 
     // addToR1WithMenuRes(R.menu.some_menu, MenuBuilder.Callback cb)
+
+
+    // TODO MenuBuilder is an restricted api
 
 
 
@@ -337,14 +339,14 @@ public class HandyActionBarLayout extends RelativeLayout {
     }
 
     /**
-     * 返回某个位置的View，注意不是容器FrameLayout，而是里面的实际View，当没有时返回null
+     * return view at position. Note, it's the actual view, not the container(which is a frame layout), that will be returned. will return null when empty.
      */
     public View getViewAt(int position) {
         return getFrame(position).getChildAt(0);
     }
 
     /**
-     * 返回背景ImageView，我们的ActionBar的背景是一个独立的imageView
+     * We use an ImageView to serve as bar background, this method returns the ImageView.
      */
     public ImageView getBgImageView() {
         return imageBg;
